@@ -62,7 +62,7 @@ if (isset($_POST["submit_button"])) {
 
     // When Submit button is set, check if nickel, dime, quarter values are empty
 
-    if (empty($nickel || $dime || $quarter)) {
+    if (empty($nickel) && empty($dime) && empty($quarter)) {
         echo "Insert coin amount! <br>";
 
         // When Submit button is set, check if EURO currency is set and calculate money in Euros
